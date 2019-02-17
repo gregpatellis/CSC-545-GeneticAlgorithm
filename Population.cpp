@@ -17,8 +17,7 @@ Population& Population::operator=(const Population& other)
 
 Individual& Population::randomSelection()
 {
-  // TODO implement random selection
-  // it should return an individual of the population
+  // return an individual of the population
   // with a probability proportional to its fitness
 
   int sum = 0;
