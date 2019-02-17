@@ -47,10 +47,10 @@ int main(int argc, char* argv[])
   initMap(map);
 
   srand((unsigned)time(NULL));
-  const int populationSize = 20; // TODO find reasonable value
+  const int populationSize = 20; 
   Population population(map, populationSize);
 
-  const int maxIterations = 100; // TODO find reasonable value
+  const int maxIterations = 100; 
   int currentIteration = 0;
   bool goalFound = false;
   Individual bestIndividual(map); // to hold the individual representing the goal, if any
@@ -64,7 +64,7 @@ int main(int argc, char* argv[])
       Individual x = population.randomSelection();
       Individual y = population.randomSelection();
       Individual child = Individual::reproduce(x, y,map);
-      if(1 == (rand() % (5+1))) // TODO use small probability instead
+      if(1 == (rand() % (5+1))) 
       {
         child.mutate(map);
       }
