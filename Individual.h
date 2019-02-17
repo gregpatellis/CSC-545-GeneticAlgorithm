@@ -11,7 +11,6 @@ private:
   const Map* map; // a pointer to the map
   int fitness; // fitness is cached and only updated on request whenever necessary
   int stateColor[10];
-  // TODO some representation for the genom of the individual (its internal representation)
 
   /**
    * Updates the fitness value based on the genom and the map.
