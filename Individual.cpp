@@ -48,7 +48,6 @@ Individual Individual::reproduce(const Individual& x, const Individual& y,const 
                 child.stateColor[spliceIndex + i + 1] = spliceX[i];
 
   }
-  // TODO generate child from parent individuals x and y
 
   child.updateFitness(map);
   return child;
@@ -56,7 +55,6 @@ Individual Individual::reproduce(const Individual& x, const Individual& y,const 
 
 bool Individual::isGoal(const Map& map) const
 {
-  // TODO implement goal test
  
   for(int i = 0; i < map.borders.size();i++)
   {
@@ -73,7 +71,6 @@ double Individual::getFitness() const
 
 void Individual::updateFitness(const Map& map)
 {
-  // TODO implement fitness function
   // set member fitness to computed fitness value
 
   int counter = 0;
@@ -90,7 +87,6 @@ void Individual::updateFitness(const Map& map)
 
 void Individual::mutate(const Map& map)
 {
-  // TODO implement random mutation 
   
   int genePool = sizeof(map.states.size());
   int index = (rand() % (genePool + 1 ));
